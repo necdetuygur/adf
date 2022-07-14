@@ -1,10 +1,15 @@
+import Iko from "./components/Iko";
+import FwAltin from "./components/FwAltin";
+import FwDoviz from "./components/FwDoviz";
+
 function App() {
-  return <div className="container">
-    <div className="card">
-      <div className="card-header">test</div>
-      <div className="card-body">test</div>
-    </div>
-  </div>;
+  return (
+    <>
+      <FwAltin />
+      <FwDoviz />
+      <Iko />
+    </>
+  );
 }
 
 export default App;
