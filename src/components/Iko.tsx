@@ -27,7 +27,7 @@ function Iko() {
         İzmir Kuyumcular Odası Fiyatları
       </div>
       <div className="card-body p-0 bg-dark">
-        <table className="table table-dark text-white">
+        <table className="table table-dark text-white table-sm">
           <tbody>
             <tr>
               <td>Gram</td>
