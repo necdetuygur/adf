@@ -23,7 +23,9 @@ function Iko() {
 
   return (
     <div className="card mb-2 bg-dark text-light">
-      <div className="card-header bg-dark">İzmir Kuyumcular Odası</div>
+      <div className="card-header bg-dark">
+        İzmir Kuyumcular Odası Fiyatları
+      </div>
       <div className="card-body p-0 bg-dark">
         <table className="table table-dark text-white">
           <tbody>
