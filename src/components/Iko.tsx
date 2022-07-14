@@ -22,37 +22,35 @@ function Iko() {
   }, []);
 
   return (
-    <div className="card mb-2 bg-dark text-light">
-      <div className="card-header bg-dark">
-        İzmir Kuyumcular Odası Fiyatları
-      </div>
-      <div className="card-body p-0 bg-dark">
-        <table className="table table-dark text-white table-sm">
-          <tbody>
-            <tr>
-              <td>Gram</td>
-              <td className="text-end">{data.Gram}</td>
-            </tr>
-            <tr>
-              <td>Çeyrek</td>
-              <td className="text-end">{data.Ceyrek}</td>
-            </tr>
-            <tr>
-              <td>Yarım</td>
-              <td className="text-end">{data.Yarim}</td>
-            </tr>
-            <tr>
-              <td>Tam</td>
-              <td className="text-end">{data.Tam}</td>
-            </tr>
-            <tr>
-              <td>Son Güncellenme Tarihi</td>
-              <td className="text-end">{data.Tarih.replace(/-/gi, ".")}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <table className="table table-dark text-white table-sm">
+      <tbody>
+        <tr>
+          <td colSpan={9}>
+            <b>İzmir Kuyumcular Odası Fiyatları</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Gram</td>
+          <td className="text-end">{data.Gram}</td>
+        </tr>
+        <tr>
+          <td>Çeyrek</td>
+          <td className="text-end">{data.Ceyrek}</td>
+        </tr>
+        <tr>
+          <td>Yarım</td>
+          <td className="text-end">{data.Yarim}</td>
+        </tr>
+        <tr>
+          <td>Tam</td>
+          <td className="text-end">{data.Tam}</td>
+        </tr>
+        <tr>
+          <td>Son Güncellenme Tarihi</td>
+          <td className="text-end">{data.Tarih.replace(/-/gi, ".")}</td>
+        </tr>
+      </tbody>
+    </table>
   );
 }
 

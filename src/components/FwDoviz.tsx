@@ -42,11 +42,13 @@ function FwDoviz() {
   }, []);
 
   return (
-    <div className="card mb-2 bg-dark text-light">
-      <div className="card-header bg-dark">Döviz Fiyatları</div>
-      <div className="card-body p-0 bg-dark">
         <table className="table table-dark text-white table-sm">
           <tbody>
+        <tr>
+          <td colSpan={9}>
+            <b>Döviz Fiyatları</b>
+          </td>
+        </tr>
             <tr>
               <td></td>
               <td>Alış</td>
@@ -109,8 +111,6 @@ function FwDoviz() {
             </tr>
           </tbody>
         </table>
-      </div>
-    </div>
   );
 }
 
