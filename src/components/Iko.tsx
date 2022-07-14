@@ -22,7 +22,7 @@ function Iko() {
   }, []);
 
   return (
-    <table className="table table-dark text-white table-sm">
+    <table className="mt-1 mb-1 table table-dark text-white table-sm">
       <tbody>
         <tr>
           <td colSpan={9}>
