@@ -21,10 +21,13 @@ function Iko() {
       const result = await axios.get(BASE_URL + "ikd");
       setData(result.data);
       setLoading(false);
-      localStorage.setItem("Iko", JSON.stringify(result.data));
     };
     fetchData().catch(console.error);
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem("Iko", JSON.stringify(data));
+  }, [data]);
 
   return (
     <table className="mt-1 mb-1 table table-dark text-white table-sm">
@@ -37,35 +40,35 @@ function Iko() {
         <tr>
           <td>Gram</td>
           <td className="text-end">
-            {loading && <b> ⬇️ </b>}
+            {loading && <b> ☁️ </b>}
             {data.Gram}
           </td>
         </tr>
         <tr>
           <td>Çeyrek</td>
           <td className="text-end">
-            {loading && <b> ⬇️ </b>}
+            {loading && <b> ☁️ </b>}
             {data.Ceyrek}
           </td>
         </tr>
         <tr>
           <td>Yarım</td>
           <td className="text-end">
-            {loading && <b> ⬇️ </b>}
+            {loading && <b> ☁️ </b>}
             {data.Yarim}
           </td>
         </tr>
         <tr>
           <td>Tam</td>
           <td className="text-end">
-            {loading && <b> ⬇️ </b>}
+            {loading && <b> ☁️ </b>}
             {data.Tam}
           </td>
         </tr>
         <tr>
           <td>Son Güncellenme Tarihi</td>
           <td className="text-end">
-            {loading && <b> ⬇️ </b>}
+            {loading && <b> ☁️ </b>}
             {data.Tarih.replace(/-/gi, ".")}
           </td>
         </tr>

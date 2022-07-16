@@ -6,7 +6,7 @@ const BASE_URL = `https://thegold${
 }.herokuapp.com/`;
 
 function FwAltin() {
-  const [data, setData] = useState({
+  const initialData = JSON.parse("" + localStorage.getItem("FwAltin")) || {
     gram: {
       Alis: "...",
       Satis: "...",
@@ -27,29 +27,47 @@ function FwAltin() {
       Satis: "...",
       YarinkiBeklentiTahmin: "...",
     },
-  });
+  };
+
+  const [data, setData] = useState(initialData);
+  const [loadingGram, setLoadingGram] = useState(false);
+  const [loadingCeyrek, setLoadingCeyrek] = useState(false);
+  const [loadingYarim, setLoadingYarim] = useState(false);
+  const [loadingTam, setLoadingTam] = useState(false);
   useEffect(() => {
     const fetchGramData = async () => {
+      setLoadingGram(true);
       const result = await axios.get(BASE_URL + "fw/altin/gram");
-      setData((d) => ({ ...d, gram: result.data }));
+      setData((d: any) => ({ ...d, gram: result.data }));
+      setLoadingGram(false);
     };
     const fetchCeyrekData = async () => {
+      setLoadingCeyrek(true);
       const result = await axios.get(BASE_URL + "fw/altin/ceyrek");
-      setData((d) => ({ ...d, ceyrek: result.data }));
+      setData((d: any) => ({ ...d, ceyrek: result.data }));
+      setLoadingCeyrek(false);
     };
     const fetchYarimData = async () => {
+      setLoadingYarim(true);
       const result = await axios.get(BASE_URL + "fw/altin/yarim");
-      setData((d) => ({ ...d, yarim: result.data }));
+      setData((d: any) => ({ ...d, yarim: result.data }));
+      setLoadingYarim(false);
     };
     const fetchTamData = async () => {
+      setLoadingTam(true);
       const result = await axios.get(BASE_URL + "fw/altin/tam");
-      setData((d) => ({ ...d, tam: result.data }));
+      setData((d: any) => ({ ...d, tam: result.data }));
+      setLoadingTam(false);
     };
     fetchGramData().catch(console.error);
     fetchCeyrekData().catch(console.error);
     fetchYarimData().catch(console.error);
     fetchTamData().catch(console.error);
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem("FwAltin", JSON.stringify(data));
+  }, [data]);
 
   return (
     <table className="mt-1 mb-1 table table-dark text-white table-sm">
@@ -60,85 +78,52 @@ function FwAltin() {
           </td>
         </tr>
         <tr>
-          <td></td>
-          <td>Alış</td>
-          <td>Satış</td>
-          <td className="text-end">Tahmin</td>
+          <td className="w-25"></td>
+          <td className="w-25">Alış</td>
+          <td className="w-25">Satış</td>
+          <td className="w-25 text-end">Tahmin</td>
         </tr>
-        <tr>
-          <td>Gram</td>
-          <td>{data.gram.Alis}</td>
-          <td>{data.gram.Satis}</td>
-          <td className="text-end">
-            {
-              <b
-                className={
-                  data.gram.YarinkiBeklentiTahmin.indexOf("Art") > -1
-                    ? "text-success"
-                    : "text-danger"
-                }
-              >
-                {data.gram.YarinkiBeklentiTahmin}
-              </b>
-            }
-          </td>
-        </tr>
-        <tr>
-          <td>Çeyrek</td>
-          <td>{data.ceyrek.Alis}</td>
-          <td>{data.ceyrek.Satis}</td>
-          <td className="text-end">
-            {
-              <b
-                className={
-                  data.ceyrek.YarinkiBeklentiTahmin.indexOf("Art") > -1
-                    ? "text-success"
-                    : "text-danger"
-                }
-              >
-                {data.ceyrek.YarinkiBeklentiTahmin}
-              </b>
-            }
-          </td>
-        </tr>
-        <tr>
-          <td>Yarım</td>
-          <td>{data.yarim.Alis}</td>
-          <td>{data.yarim.Satis}</td>
-          <td className="text-end">
-            {
-              <b
-                className={
-                  data.yarim.YarinkiBeklentiTahmin.indexOf("Art") > -1
-                    ? "text-success"
-                    : "text-danger"
-                }
-              >
-                {data.yarim.YarinkiBeklentiTahmin}
-              </b>
-            }
-          </td>
-        </tr>
-        <tr>
-          <td>Tam</td>
-          <td>{data.tam.Alis}</td>
-          <td>{data.tam.Satis}</td>
-          <td className="text-end">
-            {
-              <b
-                className={
-                  data.tam.YarinkiBeklentiTahmin.indexOf("Art") > -1
-                    ? "text-success"
-                    : "text-danger"
-                }
-              >
-                {data.tam.YarinkiBeklentiTahmin}
-              </b>
-            }
-          </td>
-        </tr>
+        <FwRow title="Gram" rowData={data.gram} loading={loadingGram} />
+        <FwRow title="Çeyrek" rowData={data.ceyrek} loading={loadingCeyrek} />
+        <FwRow title="Yarım" rowData={data.yarim} loading={loadingYarim} />
+        <FwRow title="Tam" rowData={data.tam} loading={loadingTam} />
       </tbody>
     </table>
+  );
+}
+
+function FwRow(props: any) {
+  const title = props.title;
+  const rowData = props.rowData;
+  const loading = props.loading;
+  return (
+    <tr>
+      <td>{title}</td>
+      <td>
+        {rowData.Alis}
+        {loading && <b> ☁️ </b>}
+      </td>
+      <td>
+        {rowData.Satis}
+        {loading && <b> ☁️ </b>}
+      </td>
+      <td className="text-end">
+        {loading && <b> ☁️ </b>}
+        {
+          <b
+            className={
+              rowData.YarinkiBeklentiTahmin.indexOf("Art") > -1
+                ? "text-success"
+                : rowData.YarinkiBeklentiTahmin.indexOf("Az") > -1
+                ? "text-danger"
+                : ""
+            }
+          >
+            {rowData.YarinkiBeklentiTahmin}
+          </b>
+        }
+      </td>
+    </tr>
   );
 }
 
