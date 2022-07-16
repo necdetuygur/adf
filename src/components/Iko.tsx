@@ -6,17 +6,22 @@ const BASE_URL = `https://thegold${
 }.herokuapp.com/`;
 
 function Iko() {
-  const [data, setData] = useState({
+  const initialData = JSON.parse("" + localStorage.getItem("Iko")) || {
     Tarih: "...",
     Gram: "...",
     Ceyrek: "...",
     Yarim: "...",
     Tam: "...",
-  });
+  };
+  const [data, setData] = useState(initialData);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true);
       const result = await axios.get(BASE_URL + "ikd");
       setData(result.data);
+      setLoading(false);
+      localStorage.setItem("Iko", JSON.stringify(result.data));
     };
     fetchData().catch(console.error);
   }, []);
@@ -27,6 +32,7 @@ function Iko() {
         <tr>
           <td colSpan={9}>
             <b>İzmir Kuyumcular Odası Fiyatları</b>
+            {loading && <b className="float-end">...</b>}
           </td>
         </tr>
         <tr>
