@@ -65,10 +65,10 @@ function FwDoviz() {
           </td>
         </tr>
         <tr>
-          <td className="w-25"></td>
-          <td className="w-25">Alış</td>
-          <td className="w-25">Satış</td>
-          <td className="w-25 text-end">Tahmin</td>
+          <td></td>
+          <td>Alış</td>
+          <td>Satış</td>
+          <td className="text-end">Tahmin</td>
         </tr>
         <FwRow title="Dolar (USD)" rowData={data.usd} loading={loadingUsd} />
         <FwRow title="Euro (EUR)" rowData={data.eur} loading={loadingEur} />

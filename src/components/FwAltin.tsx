@@ -78,10 +78,10 @@ function FwAltin() {
           </td>
         </tr>
         <tr>
-          <td className="w-25"></td>
-          <td className="w-25">Alış</td>
-          <td className="w-25">Satış</td>
-          <td className="w-25 text-end">Tahmin</td>
+          <td></td>
+          <td>Alış</td>
+          <td>Satış</td>
+          <td className="text-end">Tahmin</td>
         </tr>
         <FwRow title="Gram" rowData={data.gram} loading={loadingGram} />
         <FwRow title="Çeyrek" rowData={data.ceyrek} loading={loadingCeyrek} />
