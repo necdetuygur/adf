@@ -32,28 +32,42 @@ function Iko() {
         <tr>
           <td colSpan={9}>
             <b>İzmir Kuyumcular Odası Fiyatları</b>
-            {loading && <b className="float-end">...</b>}
           </td>
         </tr>
         <tr>
           <td>Gram</td>
-          <td className="text-end">{data.Gram}</td>
+          <td className="text-end">
+            {loading && <b> ⬇️ </b>}
+            {data.Gram}
+          </td>
         </tr>
         <tr>
           <td>Çeyrek</td>
-          <td className="text-end">{data.Ceyrek}</td>
+          <td className="text-end">
+            {loading && <b> ⬇️ </b>}
+            {data.Ceyrek}
+          </td>
         </tr>
         <tr>
           <td>Yarım</td>
-          <td className="text-end">{data.Yarim}</td>
+          <td className="text-end">
+            {loading && <b> ⬇️ </b>}
+            {data.Yarim}
+          </td>
         </tr>
         <tr>
           <td>Tam</td>
-          <td className="text-end">{data.Tam}</td>
+          <td className="text-end">
+            {loading && <b> ⬇️ </b>}
+            {data.Tam}
+          </td>
         </tr>
         <tr>
           <td>Son Güncellenme Tarihi</td>
-          <td className="text-end">{data.Tarih.replace(/-/gi, ".")}</td>
+          <td className="text-end">
+            {loading && <b> ⬇️ </b>}
+            {data.Tarih.replace(/-/gi, ".")}
+          </td>
         </tr>
       </tbody>
     </table>
