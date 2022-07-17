@@ -66,9 +66,9 @@ function FwDoviz() {
         </tr>
         <tr>
           <td style={{ width: "28%" }}></td>
-          <td style={{ width: "23%" }}>Alış</td>
-          <td style={{ width: "23%" }}>Satış</td>
-          <td style={{ width: "26%" }} className="text-end">
+          <td style={{ width: "21%" }}>Alış</td>
+          <td style={{ width: "21%" }}>Satış</td>
+          <td style={{ width: "30%" }} className="text-end">
             Tahmin
           </td>
         </tr>
