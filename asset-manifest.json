@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/adf/static/css/main.3931954b.css",
-    "main.js": "/adf/static/js/main.8587eff1.js",
+    "main.css": "/adf/static/css/main.6f46a4f5.css",
+    "main.js": "/adf/static/js/main.1405ab79.js",
+    "service-worker.js": "/adf/service-worker.js",
     "index.html": "/adf/index.html"
   },
   "entrypoints": [
-    "static/css/main.3931954b.css",
-    "static/js/main.8587eff1.js"
+    "static/css/main.6f46a4f5.css",
+    "static/js/main.1405ab79.js"
   ]
 }
