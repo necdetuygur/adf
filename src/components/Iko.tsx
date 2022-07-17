@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import loadingGif from "../assets/loading.gif";
+import Loading from "./shared/Loading";
 
 const BASE_URL = `https://thegold${
   new Date().getDate() > 17 ? new Date().getDate() - 17 : new Date().getDate()
@@ -75,14 +75,6 @@ function Iko() {
         </tr>
       </tbody>
     </table>
-  );
-}
-
-function Loading() {
-  return (
-    <span className="p-1">
-      <img width="13" src={loadingGif} alt="" />
-    </span>
   );
 }
 

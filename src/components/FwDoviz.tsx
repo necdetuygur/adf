@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import loadingGif from "../assets/loading.gif";
+import FwRow from "./shared/FwRow";
 
 const BASE_URL = `https://thegold${
   new Date().getDate() > 17 ? new Date().getDate() - 17 : new Date().getDate()
@@ -78,49 +78,6 @@ function FwDoviz() {
         <FwRow title="Sterlin (GBP)" rowData={data.gbp} loading={loadingGbp} />
       </tbody>
     </table>
-  );
-}
-
-function FwRow(props: any) {
-  const title = props.title;
-  const rowData = props.rowData;
-  const loading = props.loading;
-  return (
-    <tr>
-      <td>{title}</td>
-      <td>
-        {rowData.Alis}
-        {loading && <Loading />}
-      </td>
-      <td>
-        {rowData.Satis}
-        {loading && <Loading />}
-      </td>
-      <td className="text-end">
-        {loading && <Loading />}
-        {
-          <b
-            className={
-              rowData.YarinkiBeklentiTahmin.indexOf("Art") > -1
-                ? "text-success"
-                : rowData.YarinkiBeklentiTahmin.indexOf("Az") > -1
-                ? "text-danger"
-                : ""
-            }
-          >
-            {rowData.YarinkiBeklentiTahmin}
-          </b>
-        }
-      </td>
-    </tr>
-  );
-}
-
-function Loading() {
-  return (
-    <span className="p-1">
-      <img width="13" src={loadingGif} alt="" />
-    </span>
   );
 }
 
