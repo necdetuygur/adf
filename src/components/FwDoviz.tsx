@@ -89,14 +89,14 @@ function FwRow(props: any) {
       <td>{title}</td>
       <td>
         {rowData.Alis}
-        {loading && <b> ☁️ </b>}
+        {loading && <b style={{ fontSize: "0.5em" }}> ☁️ </b>}
       </td>
       <td>
         {rowData.Satis}
-        {loading && <b> ☁️ </b>}
+        {loading && <b style={{ fontSize: "0.5em" }}> ☁️ </b>}
       </td>
       <td className="text-end">
-        {loading && <b> ☁️ </b>}
+        {loading && <b style={{ fontSize: "0.5em" }}> ☁️ </b>}
         {
           <b
             className={

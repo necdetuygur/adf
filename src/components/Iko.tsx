@@ -40,35 +40,35 @@ function Iko() {
         <tr>
           <td>Gram</td>
           <td className="text-end">
-            {loading && <b> ☁️ </b>}
+            {loading && <b style={{ fontSize: "0.5em" }}> ☁️ </b>}
             {data.Gram}
           </td>
         </tr>
         <tr>
           <td>Çeyrek</td>
           <td className="text-end">
-            {loading && <b> ☁️ </b>}
+            {loading && <b style={{ fontSize: "0.5em" }}> ☁️ </b>}
             {data.Ceyrek}
           </td>
         </tr>
         <tr>
           <td>Yarım</td>
           <td className="text-end">
-            {loading && <b> ☁️ </b>}
+            {loading && <b style={{ fontSize: "0.5em" }}> ☁️ </b>}
             {data.Yarim}
           </td>
         </tr>
         <tr>
           <td>Tam</td>
           <td className="text-end">
-            {loading && <b> ☁️ </b>}
+            {loading && <b style={{ fontSize: "0.5em" }}> ☁️ </b>}
             {data.Tam}
           </td>
         </tr>
         <tr>
           <td>Son Güncellenme Tarihi</td>
           <td className="text-end">
-            {loading && <b> ☁️ </b>}
+            {loading && <b style={{ fontSize: "0.5em" }}> ☁️ </b>}
             {data.Tarih.replace(/-/gi, ".")}
           </td>
         </tr>
