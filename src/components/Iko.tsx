@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import loadingGif from "../assets/loading.gif";
 
 const BASE_URL = `https://thegold${
   new Date().getDate() > 17 ? new Date().getDate() - 17 : new Date().getDate()
@@ -40,40 +41,48 @@ function Iko() {
         <tr>
           <td>Gram</td>
           <td className="text-end">
-            {loading && <b style={{ fontSize: "0.5em" }}> ☁️ </b>}
+            {loading && <Loading />}
             {data.Gram}
           </td>
         </tr>
         <tr>
           <td>Çeyrek</td>
           <td className="text-end">
-            {loading && <b style={{ fontSize: "0.5em" }}> ☁️ </b>}
+            {loading && <Loading />}
             {data.Ceyrek}
           </td>
         </tr>
         <tr>
           <td>Yarım</td>
           <td className="text-end">
-            {loading && <b style={{ fontSize: "0.5em" }}> ☁️ </b>}
+            {loading && <Loading />}
             {data.Yarim}
           </td>
         </tr>
         <tr>
           <td>Tam</td>
           <td className="text-end">
-            {loading && <b style={{ fontSize: "0.5em" }}> ☁️ </b>}
+            {loading && <Loading />}
             {data.Tam}
           </td>
         </tr>
         <tr>
           <td>Son Güncellenme Tarihi</td>
           <td className="text-end">
-            {loading && <b style={{ fontSize: "0.5em" }}> ☁️ </b>}
+            {loading && <Loading />}
             {data.Tarih.replace(/-/gi, ".")}
           </td>
         </tr>
       </tbody>
     </table>
+  );
+}
+
+function Loading() {
+  return (
+    <span className="p-1">
+      <img width="13" src={loadingGif} alt="" />
+    </span>
   );
 }
 

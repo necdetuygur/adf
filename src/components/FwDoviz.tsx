@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import loadingGif from "../assets/loading.gif";
 
 const BASE_URL = `https://thegold${
   new Date().getDate() > 17 ? new Date().getDate() - 17 : new Date().getDate()
@@ -89,14 +90,14 @@ function FwRow(props: any) {
       <td>{title}</td>
       <td>
         {rowData.Alis}
-        {loading && <b style={{ fontSize: "0.5em" }}> ☁️ </b>}
+        {loading && <Loading />}
       </td>
       <td>
         {rowData.Satis}
-        {loading && <b style={{ fontSize: "0.5em" }}> ☁️ </b>}
+        {loading && <Loading />}
       </td>
       <td className="text-end">
-        {loading && <b style={{ fontSize: "0.5em" }}> ☁️ </b>}
+        {loading && <Loading />}
         {
           <b
             className={
@@ -112,6 +113,14 @@ function FwRow(props: any) {
         }
       </td>
     </tr>
+  );
+}
+
+function Loading() {
+  return (
+    <span className="p-1">
+      <img width="13" src={loadingGif} alt="" />
+    </span>
   );
 }
 
