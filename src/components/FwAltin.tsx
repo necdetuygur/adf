@@ -79,9 +79,9 @@ function FwAltin() {
         </tr>
         <tr>
           <td style={{ width: "26%" }}></td>
-          <td style={{ width: "25%" }}>Alış</td>
-          <td style={{ width: "25%" }}>Satış</td>
-          <td style={{ width: "24%" }} className="text-end">
+          <td style={{ width: "23%" }}>Alış</td>
+          <td style={{ width: "23%" }}>Satış</td>
+          <td style={{ width: "28%" }} className="text-end">
             Tahmin
           </td>
         </tr>
