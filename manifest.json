@@ -2,7 +2,7 @@
   "name": "Altın Döviz Fiyatları",
   "short_name": "Altın Döviz Fiyatları",
   "scope": ".",
-  "start_url": "https://necdetuygur.github.io/adf",
+  "start_url": "adf/",
   "icons": [
     {
       "src": "img/android-chrome-192x192.png",
