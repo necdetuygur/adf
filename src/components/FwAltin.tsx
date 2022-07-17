@@ -78,10 +78,12 @@ function FwAltin() {
           </td>
         </tr>
         <tr>
-          <td></td>
-          <td>Alış</td>
-          <td>Satış</td>
-          <td className="text-end">Tahmin</td>
+          <td style={{ width: "26%" }}></td>
+          <td style={{ width: "25%" }}>Alış</td>
+          <td style={{ width: "25%" }}>Satış</td>
+          <td style={{ width: "24%" }} className="text-end">
+            Tahmin
+          </td>
         </tr>
         <FwRow title="Gram" rowData={data.gram} loading={loadingGram} />
         <FwRow title="Çeyrek" rowData={data.ceyrek} loading={loadingCeyrek} />
