@@ -2,23 +2,32 @@ import React from "react";
 import Iko from "./components/Iko";
 import FwAltin from "./components/FwAltin";
 import FwDoviz from "./components/FwDoviz";
+import Progress from "./components/shared/Progress";
 
 function App() {
+  const [progressVal, setProgressVal] = React.useState(0);
   React.useEffect(() => {
-    setTimeout(() => {
-      // eslint-disable-next-line
-      window.location.href = window.location.href;
-    }, 90e3);
+    setInterval(() => {
+      setProgressVal((d) => {
+        console.log(d);
+        if (d > 99) {
+          // eslint-disable-next-line
+          window.location.href = window.location.href;
+        }
+        return (d = d + 1);
+      });
+    }, 1000);
+    document.addEventListener("click", function () {
+      if (window != null) {
+        // eslint-disable-next-line
+        window.location.href = window.location.href;
+      }
+    });
     // eslint-disable-next-line
   }, []);
-  document.addEventListener("click", function () {
-    if (window != null) {
-      // eslint-disable-next-line
-      window.location.href = window.location.href;
-    }
-  });
   return (
     <>
+      <Progress val={progressVal} />
       <FwAltin />
       <FwDoviz />
       <Iko />
