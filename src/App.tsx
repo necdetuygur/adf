@@ -5,7 +5,7 @@ import FwDoviz from "./components/FwDoviz";
 import Progress from "./components/shared/Progress";
 
 function App() {
-  const [progressVal, setProgressVal] = React.useState(0);
+  const [progressVal, setProgressVal] = React.useState(0.0);
   React.useEffect(() => {
     setInterval(() => {
       setProgressVal((d) => {
@@ -14,9 +14,9 @@ function App() {
           // eslint-disable-next-line
           window.location.href = window.location.href;
         }
-        return (d = d + 1);
+        return (d = d + 0.1);
       });
-    }, 1000);
+    }, 100);
     document.addEventListener("click", function () {
       if (window != null) {
         // eslint-disable-next-line
