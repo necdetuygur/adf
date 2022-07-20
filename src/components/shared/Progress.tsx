@@ -1,6 +1,6 @@
 function Progress(props: any) {
   return (
-    <div className="progress mb-0" style={{ height: "2px" }}>
+    <div className="progress mb-0 mt-1" style={{ height: "2px" }}>
       <div
         className="progress-bar"
         role={"progressbar"}
