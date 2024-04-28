@@ -1,0 +1,83 @@
+{
+  "configVersion": 1,
+  "timestamp": 1714298238994,
+  "index": "https://necdetuygur.github.io/adf/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://necdetuygur.github.io/adf/356.fbf32f4cd05ae95a.js",
+        "https://necdetuygur.github.io/adf/477.df32bab4543343a9.js",
+        "https://necdetuygur.github.io/adf/708.342ed83586e79ed0.js",
+        "https://necdetuygur.github.io/adf/907.c6f0bec458a947f7.js",
+        "https://necdetuygur.github.io/adf/favicon.ico",
+        "https://necdetuygur.github.io/adf/index.html",
+        "https://necdetuygur.github.io/adf/main.9893068573bd4bd0.js",
+        "https://necdetuygur.github.io/adf/manifest.webmanifest",
+        "https://necdetuygur.github.io/adf/polyfills.b56eb6b7b894ac2a.js",
+        "https://necdetuygur.github.io/adf/runtime.7007c58258d721ca.js",
+        "https://necdetuygur.github.io/adf/scripts.c91eedceb4883133.js",
+        "https://necdetuygur.github.io/adf/styles.5b6879f41d891c07.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://necdetuygur.github.io/adf/assets/icons/icon-144x144.png",
+        "https://necdetuygur.github.io/adf/assets/icons/icon-152x152.png",
+        "https://necdetuygur.github.io/adf/assets/icons/icon-192x192.png",
+        "https://necdetuygur.github.io/adf/assets/loading.gif"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://necdetuygur.github.io/adf/356.fbf32f4cd05ae95a.js": "6833a170e3d89a214fcaa79dcea96f99453ca984",
+    "https://necdetuygur.github.io/adf/477.df32bab4543343a9.js": "d0fb2aaa9da951c5e74702a77e87abb3c0f94ef4",
+    "https://necdetuygur.github.io/adf/708.342ed83586e79ed0.js": "2d8c9ed8d78e006d683bed0f5848df7d4bef41da",
+    "https://necdetuygur.github.io/adf/907.c6f0bec458a947f7.js": "4e9af778438eaea4e79582082e251661a726b8b8",
+    "https://necdetuygur.github.io/adf/assets/icons/icon-144x144.png": "ccd252133e645f3c1b2dbcf9633cc8049b16ebb5",
+    "https://necdetuygur.github.io/adf/assets/icons/icon-152x152.png": "a8cda47f5b9167f41578594661d5ad2f52106eac",
+    "https://necdetuygur.github.io/adf/assets/icons/icon-192x192.png": "18f2dd1dea9fe6483afec73851eb9e70d494889a",
+    "https://necdetuygur.github.io/adf/assets/loading.gif": "1999e2d42b91ef83fbfd19e29b6e7dd4d612a1d3",
+    "https://necdetuygur.github.io/adf/favicon.ico": "7c7a3793b6245df4076598abc15027cee2e3ea8e",
+    "https://necdetuygur.github.io/adf/index.html": "94ef1e11feafb9bf6b36b9aec6f5aeb1e0abe306",
+    "https://necdetuygur.github.io/adf/main.9893068573bd4bd0.js": "01a4b15ae6e3c45b08f6498bb30ff4257f038fc1",
+    "https://necdetuygur.github.io/adf/manifest.webmanifest": "3e28f916fee6d45d6f1c1a69ff2551b2c3b7f60c",
+    "https://necdetuygur.github.io/adf/polyfills.b56eb6b7b894ac2a.js": "0920c5857420029a98c2ce879fe4964dfd24d972",
+    "https://necdetuygur.github.io/adf/runtime.7007c58258d721ca.js": "9001c8c1388356bc06c6e295350050b8cfc7e337",
+    "https://necdetuygur.github.io/adf/scripts.c91eedceb4883133.js": "6ba74230f51147bf9c36876f677467b57cb7883d",
+    "https://necdetuygur.github.io/adf/styles.5b6879f41d891c07.css": "975524d6e39aa6fefcf0056df7ebf568a9f5d32e"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
