@@ -1,0 +1,85 @@
+{
+  "configVersion": 1,
+  "timestamp": 1728154403186,
+  "index": "https://necdetuygur.github.io/adf/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://necdetuygur.github.io/adf/356.fbf32f4cd05ae95a.js",
+        "https://necdetuygur.github.io/adf/477.df32bab4543343a9.js",
+        "https://necdetuygur.github.io/adf/708.e1b7acac2e0d482c.js",
+        "https://necdetuygur.github.io/adf/907.c6f0bec458a947f7.js",
+        "https://necdetuygur.github.io/adf/favicon.ico",
+        "https://necdetuygur.github.io/adf/index.html",
+        "https://necdetuygur.github.io/adf/main.13233a06960c0692.js",
+        "https://necdetuygur.github.io/adf/manifest.webmanifest",
+        "https://necdetuygur.github.io/adf/polyfills.b56eb6b7b894ac2a.js",
+        "https://necdetuygur.github.io/adf/runtime.de6cbf12b5981896.js",
+        "https://necdetuygur.github.io/adf/scripts.dcc45d84c84ddb6d.js",
+        "https://necdetuygur.github.io/adf/styles.09e8772f53aa2dbd.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://necdetuygur.github.io/adf/assets/icons/icon-144x144.png",
+        "https://necdetuygur.github.io/adf/assets/icons/icon-152x152.png",
+        "https://necdetuygur.github.io/adf/assets/icons/icon-192x192.png",
+        "https://necdetuygur.github.io/adf/assets/loading.gif",
+        "https://necdetuygur.github.io/adf/assets/loading.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://necdetuygur.github.io/adf/356.fbf32f4cd05ae95a.js": "6833a170e3d89a214fcaa79dcea96f99453ca984",
+    "https://necdetuygur.github.io/adf/477.df32bab4543343a9.js": "d0fb2aaa9da951c5e74702a77e87abb3c0f94ef4",
+    "https://necdetuygur.github.io/adf/708.e1b7acac2e0d482c.js": "a55d9757d5fb235318561ef7a4db3f25bdad351e",
+    "https://necdetuygur.github.io/adf/907.c6f0bec458a947f7.js": "4e9af778438eaea4e79582082e251661a726b8b8",
+    "https://necdetuygur.github.io/adf/assets/icons/icon-144x144.png": "ccd252133e645f3c1b2dbcf9633cc8049b16ebb5",
+    "https://necdetuygur.github.io/adf/assets/icons/icon-152x152.png": "a8cda47f5b9167f41578594661d5ad2f52106eac",
+    "https://necdetuygur.github.io/adf/assets/icons/icon-192x192.png": "18f2dd1dea9fe6483afec73851eb9e70d494889a",
+    "https://necdetuygur.github.io/adf/assets/loading.gif": "1999e2d42b91ef83fbfd19e29b6e7dd4d612a1d3",
+    "https://necdetuygur.github.io/adf/assets/loading.svg": "c1e1ca1107e100bc6badefc9d5537bc83b25c4d8",
+    "https://necdetuygur.github.io/adf/favicon.ico": "7c7a3793b6245df4076598abc15027cee2e3ea8e",
+    "https://necdetuygur.github.io/adf/index.html": "7de4b46cc0eeb2995c8b1b268edf30de53b3592a",
+    "https://necdetuygur.github.io/adf/main.13233a06960c0692.js": "a1bad4aa4966f6b0c7f347f98c409d462d9bf46b",
+    "https://necdetuygur.github.io/adf/manifest.webmanifest": "3e28f916fee6d45d6f1c1a69ff2551b2c3b7f60c",
+    "https://necdetuygur.github.io/adf/polyfills.b56eb6b7b894ac2a.js": "0920c5857420029a98c2ce879fe4964dfd24d972",
+    "https://necdetuygur.github.io/adf/runtime.de6cbf12b5981896.js": "b5cd92808377846318dde06dc0ae8e9b56c28285",
+    "https://necdetuygur.github.io/adf/scripts.dcc45d84c84ddb6d.js": "b3cc0c775ebd2db6e373780845611a671c63cb44",
+    "https://necdetuygur.github.io/adf/styles.09e8772f53aa2dbd.css": "04791a059f07ebaa85966c496f3510183921428b"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
