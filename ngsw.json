@@ -1,0 +1,87 @@
+{
+  "configVersion": 1,
+  "timestamp": 1739898473311,
+  "index": "https://necdetuygur.github.io/adf/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://necdetuygur.github.io/adf/150.c345b78801478b20.js",
+        "https://necdetuygur.github.io/adf/254.116d2642d572f2b8.js",
+        "https://necdetuygur.github.io/adf/271.57e10459ddd7887b.js",
+        "https://necdetuygur.github.io/adf/303.a3d563879fa98b05.js",
+        "https://necdetuygur.github.io/adf/417.5f0dda84e6064c48.js",
+        "https://necdetuygur.github.io/adf/favicon.ico",
+        "https://necdetuygur.github.io/adf/index.html",
+        "https://necdetuygur.github.io/adf/main.a44d8bfc447eecda.js",
+        "https://necdetuygur.github.io/adf/manifest.webmanifest",
+        "https://necdetuygur.github.io/adf/polyfills.f0fdc2582626c930.js",
+        "https://necdetuygur.github.io/adf/runtime.2cc1844b8b814c79.js",
+        "https://necdetuygur.github.io/adf/scripts.e2552fd72120c73e.js",
+        "https://necdetuygur.github.io/adf/styles.ef750c280979c448.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://necdetuygur.github.io/adf/assets/icons/icon-144x144.png",
+        "https://necdetuygur.github.io/adf/assets/icons/icon-152x152.png",
+        "https://necdetuygur.github.io/adf/assets/icons/icon-192x192.png",
+        "https://necdetuygur.github.io/adf/assets/loading.gif",
+        "https://necdetuygur.github.io/adf/assets/loading.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://necdetuygur.github.io/adf/150.c345b78801478b20.js": "0215c10bd49735e5687fac75802e730c84345966",
+    "https://necdetuygur.github.io/adf/254.116d2642d572f2b8.js": "49fc333fe3a9b14ae4a105679d5da2c0dce45b14",
+    "https://necdetuygur.github.io/adf/271.57e10459ddd7887b.js": "167b3c2e8c134fdcad9152b45d0bdf9a05080b6d",
+    "https://necdetuygur.github.io/adf/303.a3d563879fa98b05.js": "a9f869661e377d61444feff9ef06ea317089e692",
+    "https://necdetuygur.github.io/adf/417.5f0dda84e6064c48.js": "47073abed1d1116f2628b3d8041746212bb97550",
+    "https://necdetuygur.github.io/adf/assets/icons/icon-144x144.png": "ccd252133e645f3c1b2dbcf9633cc8049b16ebb5",
+    "https://necdetuygur.github.io/adf/assets/icons/icon-152x152.png": "a8cda47f5b9167f41578594661d5ad2f52106eac",
+    "https://necdetuygur.github.io/adf/assets/icons/icon-192x192.png": "18f2dd1dea9fe6483afec73851eb9e70d494889a",
+    "https://necdetuygur.github.io/adf/assets/loading.gif": "1999e2d42b91ef83fbfd19e29b6e7dd4d612a1d3",
+    "https://necdetuygur.github.io/adf/assets/loading.svg": "c1e1ca1107e100bc6badefc9d5537bc83b25c4d8",
+    "https://necdetuygur.github.io/adf/favicon.ico": "7c7a3793b6245df4076598abc15027cee2e3ea8e",
+    "https://necdetuygur.github.io/adf/index.html": "e4a19990bf8752cde99c9fb6fe190347de4835d8",
+    "https://necdetuygur.github.io/adf/main.a44d8bfc447eecda.js": "9ba188180e2a9490db45e84087a290c221904cb4",
+    "https://necdetuygur.github.io/adf/manifest.webmanifest": "3e28f916fee6d45d6f1c1a69ff2551b2c3b7f60c",
+    "https://necdetuygur.github.io/adf/polyfills.f0fdc2582626c930.js": "ab44be5d3ebf8444eff4e38e585a140fd52a3954",
+    "https://necdetuygur.github.io/adf/runtime.2cc1844b8b814c79.js": "8afb948500cf4b81fcafe52d496a76ddd455a343",
+    "https://necdetuygur.github.io/adf/scripts.e2552fd72120c73e.js": "30b4eb319c940a96b61e6aafe8b14fd1dc74faec",
+    "https://necdetuygur.github.io/adf/styles.ef750c280979c448.css": "da73fae3f27de6ab1725facd93cb75dec81e3546"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
